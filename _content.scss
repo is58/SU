@@ -1,0 +1,97 @@
+@import"color.scss";
+@import"media-querries.scss";
+
+
+.main{
+    
+    background: url(arka.jpg);
+    background-size: cover;
+   
+
+    &_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        height: 90vh;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 20px;
+
+        @include tablet{
+            grid-template-columns: 1fr;
+            height: 100%;
+        }
+
+        &-left{
+            width: 100%;
+            line-height: 1.2;
+
+            @include tablet{
+                padding: 5rem 0;
+            }
+
+            @include mobile{
+                line-height: 1.5;
+            }
+        }
+
+        &-left h1{
+            margin-left:50px;
+            font-size: 4rem;
+            color: $letter;
+            font-style: italic;
+            letter-spacing: 5px;
+
+            @include tablet{
+                font-size: 2rem;
+            }
+        }
+
+        &-left h3{
+            font-size: 2rem;
+            font-weight: $letter;
+            font-style: italic;
+            letter-spacing: 2px;
+            margin-left:50px;
+
+            @include tablet{
+                font-size: 1rem;
+            }
+        }
+
+        &-left p{
+            font-size: 1.5rem;
+            color: $green;
+            margin-top: 1rem;
+            font-weight: 700;
+            margin-left:50px;
+            font-style: italic;
+            letter-spacing: 2px;
+
+            @include mobile{
+                font-size: 1.5rem;
+            
+            }
+        }
+
+        &-right{
+            text-align: center;
+            
+        }
+
+        &-img{
+        
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+        
+          }
+    } 
+}
+
+button{
+    margin-left: 50px;
+    
+}

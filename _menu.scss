@@ -1,0 +1,101 @@
+@import"color.scss";
+@import"media-querries.scss";
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
+
+
+.navbar{
+    height: 50px;
+    display: flex;
+    background-color: $light;
+    justify-content: space-between;
+    padding: 15px; 
+    text-align: center;
+    
+    
+    &_logo{
+
+       font-size: 50px;
+       font-style: italic;
+       text-decoration: none;
+       font-family:'Franklin Gothic Medium', 'Arial Black', Arial, sans-serif;
+       font-style: italic;
+       cursor:pointer;
+       color: $green;
+       margin: auto 0;
+       margin-left: 30px;
+       
+    }
+
+    &_bars{
+        opacity: 0;
+        @include tablet{
+            opacity: 1;
+            color: $letter;
+            font-size: 26px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            margin: auto 0;
+            margin-top: 20px;
+
+
+        }
+    }
+
+    &_menu{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+    
+    
+        @include tablet{
+            display: none;
+        }
+
+       ul{
+        list-style: none;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        gap: 15px;
+
+        
+       }
+       &-links{
+        text-decoration: none;
+        color: $letter;
+        padding: 10px;
+        font-size: larger;
+        font-size: 20px;
+        transition: 0.5s;
+
+        &:hover{
+            color:$ekru;
+            transition: 0.5s;
+
+        }
+    }
+    
+    
+}
+
+    }
+
+    
+
+
+
+
+
+    
